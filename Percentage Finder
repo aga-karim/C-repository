@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int M,B1,B2,B3,T1,T2,T3,tot,obt;
+    char N(14) ;
+    float per, avg;
+    
+    cout<<"***************************"<<endl;
+    cout<<"Welcome to Percentage Finder"<<endl;
+    cout<<"Enter your name: "<<endl;
+    cin>>N;
+    cout<<"Enter your class: "<<endl;
+    cin>>M;
+//book 1
+    cout<<"obtain marks of Book 1: "<<endl;
+    cin>>B1;
+    cout<<"Total marks of Book 1: "<<endl;
+    cin>>T1;
+//book 2
+    cout<<"obtain marks of Book 2: "<<endl;
+    cin>>B2;
+    cout<<"Total marks of Book 2: "<<endl;
+    cin>>T2;
+//book 3
+    cout<<"obtain marks of Book 3: "<<endl;
+    cin>>B3;
+    cout<<"Total marks of Book 3: "<<endl;
+    cin>>T3;
+//total + obtain
+    tot= T1+T2+T3;
+    obt= B1+B2+B3;
+//average
+    avg= obt/3;
+//percentage
+    per= (obt*100)/tot;
+//RESULT
+    cout<<N<<" your obtain marks is "<<obt<<", Your percentage is "<<per<<" and the average marks in your subjects is "<<avg<<endl<<"Have a nice day.";
+    
+
+    return 0;
+}
