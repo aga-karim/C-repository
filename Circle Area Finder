@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int area(){
+    int radius;
+    float PI=3.14159265358979, area;
+    cout<<"***** Hello Welcome to Circle Area finder *****"<<endl;
+    cout<<"Enter Radius of Circle in 'cm': "<<endl;
+    cin>>radius;
+    area=PI*2*radius;
+    cout<<"Your area is: "<<area<<endl;
+    
+}
+int main() {
+    area();
+    return 0;
+}
