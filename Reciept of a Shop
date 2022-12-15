@@ -1,0 +1,70 @@
+#include<iostream>
+
+using namespace std;
+
+int receipt() {
+
+	// variables for item price and total
+	int i1, i2, i3, total;
+
+	// variable for customer name and item names
+	char name[10], item1[15], item2[15], item3[15];
+
+	cout<<"<*********************** Customer Recipt ***********************> \n \n";
+
+	cout<<"     Enter Customer Name: ";
+	cin>>name;
+	cout<<"   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ \n";
+
+	// item 1
+	cout<<"     Enter Item 1: ";
+	cin>>item1;
+
+	cout<<"     Enter price for item 1: ";
+	cin>>i1;
+
+	cout<<"   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ \n";
+	// item 2
+
+	cout<<"     Enter Item 2: ";
+	cin>>item2;
+
+	cout<<"     Enter price for item 2: ";
+	cin>>i2;
+
+	cout<<"   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ \n";
+	// item 3
+
+	cout<<"     Enter Item 3: ";
+	cin>>item3;
+
+	cout<<"     Enter price for item 3: ";
+	cin>>i3;
+
+	// calculate sum of all items
+	total = i1 + i2 + i3;
+
+
+	cout<< "\n <******************************************************>\n ";
+
+	cout<<" \t Items.\n";
+
+	cout<<item1 <<"    \t \t "<<i1 <<"\n";
+	cout<<item2 <<"    \t \t "<<i2 <<"\n";
+	cout<<item3 <<"    \t \t "<<i3 <<"\n \n \n";
+	cout<<"      Please pay "<< total << " on the counter. \n";
+
+	cout<<"        Thanks for shoping with us :) \n \n \n";
+
+	cout<< "<******************************************************>\n \n \n ";
+
+
+    return 0;
+}
+
+int main(){
+	
+receipt();
+	
+return 0;	
+}
