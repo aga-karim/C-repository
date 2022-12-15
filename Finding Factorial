@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main(){
+int factorial(){
     int n;
     long factorial = 1.0;
 
@@ -15,7 +15,9 @@ int main(){
         }
         cout << "Factorial of " << n << " = " << factorial;    
     }
-
+}
+int main(){
+    factorial();
     return 0;
-    
+
 }
