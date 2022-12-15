@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int average(){
+    int x,y,z;
+    float avg;
+    cout<<"Enter three numbers for Average: ";
+    cin>>x>>y>>z;
+    avg=(x+y+z)/3;
+    cout<<"Your Average is: "<<avg<<endl;
+}
+int main(){
+    average();
+    return 0;
+
+}
