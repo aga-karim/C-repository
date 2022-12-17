@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int M,B1,B2,B3,T1,T2,T3,tot,obt;
-    char N(14) ;
-    float per, avg;
-    
+
+int per() {
+int M,B1,B2,B3,T1,T2,T3,tot,obt;
+char N[16] ;
+float per, avg;
+
     cout<<"***************************"<<endl;
-    cout<<"Welcome to Percentage Finder"<<endl;
+    cout<<"Welcome to Result Finder"<<endl;
     cout<<"Enter your name: "<<endl;
     cin>>N;
     cout<<"Enter your class: "<<endl;
@@ -34,9 +35,24 @@ int main() {
     avg= obt/3;
 //percentage
     per= (obt*100)/tot;
-//RESULT
-    cout<<N<<" your obtain marks is "<<obt<<", Your percentage is "<<per<<" and the average marks in your subjects is "<<avg<<endl<<"Have a nice day.";
+    
+    return 0;
+}
+
+int result(){//RESULT
+int M,tot,obt;
+char N[16] ;
+float per, avg;
+
+
+cout<<"Name of Student: "<<N<<"\tClass: "<<M<<"\nMarks Obtain: "<<obt<<"\nPercentage: "<<per<<"\nAverage Marks: "<<avg<<endl<<"\nHave a nice day.";
     
 
+    return 0;
+}
+
+int main(){
+    per();
+    result();
     return 0;
 }
